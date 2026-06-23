@@ -62,6 +62,59 @@ C5AR1 emerged as the strongest candidate based on:
 
 ---
 
+## Results
+
+### Human Single-Cell Discovery
+
+Analysis of the AMP Lupus Nephritis cohort identified an inflammatory macrophage population characterized by expression of:
+
+- C5AR1
+- CSF1R
+- LILRB2
+- PILRA
+
+These genes showed strong enrichment within inflammatory macrophages compared with other immune and stromal populations.
+
+![Human Lead Targets](figures/Figure2_Human_Lead_Targets_DotPlot.png)
+
+---
+
+### Cross-Species Validation
+
+Independent validation in the GSE201932 mouse lupus nephritis dataset confirmed expression of multiple prioritized targets within macrophage populations.
+
+Validated targets included:
+
+- C5AR1
+- CSF1R
+- PILRA
+- CLEC7A
+- P2RX7
+- C3AR1
+
+---
+
+### Human Spatial Validation
+
+Validation in an independent human spatial transcriptomics cohort (GSE263909) demonstrated:
+
+- Increased C5AR1 expression in lupus nephritis glomeruli
+- Increased LILRB2 expression in lupus nephritis glomeruli
+- Positive correlation between C5AR1, CSF1R, LILRB2, PILRA and macrophage-rich glomerular regions
+
+---
+
+### Final Prioritized Targets
+
+| Rank | Target | Evidence |
+|--------|--------|--------|
+| 1 | C5AR1 | Human scRNA-seq, Mouse scRNA-seq, Spatial validation |
+| 2 | LILRB2 | Human scRNA-seq, Spatial validation |
+| 3 | CSF1R | Human scRNA-seq, Mouse scRNA-seq, Spatial correlation |
+| 4 | PILRA | Human scRNA-seq, Mouse scRNA-seq, Spatial correlation |
+
+---
+
 ## Datasets
 
 | Dataset | Species | Technology | Purpose |
