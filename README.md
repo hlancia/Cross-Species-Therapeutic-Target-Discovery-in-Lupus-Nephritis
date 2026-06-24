@@ -14,8 +14,6 @@ This workflow combines:
 
 to prioritize targets conserved across species and technologies.
 
-![Workflow](figures/Project_Workflow.png)
-
 ---
 
 ## Why This Project Matters
@@ -32,17 +30,7 @@ Which inflammatory macrophage-associated targets are consistently associated wit
 
 ## Analysis Workflow
 
-Human scRNA-seq Discovery (AMP LN)
-↓
-Inflammatory Macrophage Identification
-↓
-Target Prioritization
-↓
-Mouse scRNA-seq Validation (GSE201932)
-↓
-Human Spatial Validation (GSE263909)
-↓
-Consensus Target Ranking
+![Workflow](figures/Project_Workflow.png)
 
 ---
 
