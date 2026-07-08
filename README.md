@@ -175,7 +175,7 @@ These pathways represent potential opportunities for therapeutic intervention.
 ## Human Inflammatory Macrophage Discovery
 
 <p align="center">
-<img src="figures/Figure2_Human_Target_Discovery.png" width="500">
+<img src="figures/Figure2_Human_Lead_Targets_DotPlot.png" width="500">
 </p>
 
 ---
@@ -183,7 +183,7 @@ These pathways represent potential opportunities for therapeutic intervention.
 ## Cross-Species Validation
 
 <p align="center">
-<img src="figures/Figure4_Mouse_Validation.png" width="500">
+<img src="figures/Figure4_Mouse_Target_Validation_DotPlot.png" width="500">
 </p>
 
 ---
@@ -191,7 +191,7 @@ These pathways represent potential opportunities for therapeutic intervention.
 ## Final Therapeutic Target Ranking
 
 <p align="center">
-<img src="figures/Figure6_Final_Target_Ranking.png" width="500">
+<img src="figures/Figure5_Final_Target_Ranking.png" width="500">
 </p>
 
 ---
