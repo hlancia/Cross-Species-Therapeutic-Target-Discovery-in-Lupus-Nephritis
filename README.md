@@ -238,14 +238,12 @@ Despite these limitations, convergence across independent datasets substantially
 
 # Future Directions
 
-Planned extensions include:
+This project serves as the foundation for subsequent repositories in the AI Computational Immunology Portfolio, including:
 
 - Cell–cell communication analysis
 - AI-driven therapeutic target prioritization
-- Multi-omic target integration
-- GWAS integration
-- Druggability annotation
-- Functional validation using experimental models
+- Patient stratification and precision medicine
+- Multi-modal integration of transcriptomic and immune profiling data
 
 ---
 
