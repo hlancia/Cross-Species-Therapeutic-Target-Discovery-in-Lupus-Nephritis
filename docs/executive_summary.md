@@ -1,80 +1,111 @@
 # Executive Summary
 
-## Objective
+## Project Objective
 
-Lupus nephritis (LN) remains a major cause of kidney failure in patients with systemic lupus erythematosus. Macrophages are increasingly recognized as key drivers of kidney inflammation and tissue injury.
+Lupus nephritis (LN) is one of the most severe manifestations of systemic lupus erythematosus and remains a leading cause of chronic kidney disease and kidney failure. Increasing evidence indicates that inflammatory macrophages play a central role in disease progression, making them attractive therapeutic targets.
 
-The objective of this project was to identify and prioritize macrophage-associated therapeutic targets through integration of independent human and mouse transcriptomic datasets.
+The objective of this project was to develop a reproducible computational workflow for identifying and prioritizing macrophage-associated therapeutic targets through the integration of independent human and mouse transcriptomic datasets.
 
 ---
 
-## Approach
+## Study Design
 
-Three independent datasets were integrated:
+Three complementary public datasets were integrated to strengthen confidence in candidate therapeutic targets through independent validation across species and technologies.
 
-| Dataset | Species | Technology | Role |
-|----------|----------|------------|----------|
-| AMP Lupus Nephritis (SDY997) | Human | Single-cell RNA-seq | Discovery |
-| GSE201932 | Mouse | Single-cell RNA-seq | Cross-species validation |
+| Dataset | Species | Technology | Purpose |
+|----------|----------|------------|---------|
+| AMP Lupus Nephritis (SDY997) | Human | Single-cell RNA sequencing | Target discovery |
+| GSE201932 | Mouse | Single-cell RNA sequencing | Cross-species validation |
 | GSE263909 | Human | Spatial transcriptomics | Independent validation |
 
-Analysis workflow:
+---
 
-Human LN scRNA-seq
-↓
-Inflammatory macrophage identification
-↓
-Differential expression analysis
-↓
-Target prioritization
-↓
-Mouse validation
-↓
-Human spatial validation
-↓
-Consensus ranking
+## Computational Workflow
+
+```text
+Human Kidney scRNA-seq
+          │
+          ▼
+Inflammatory Macrophage Identification
+          │
+          ▼
+Differential Expression Analysis
+          │
+          ▼
+Candidate Target Prioritization
+          │
+          ▼
+Cross-Species Validation
+(Mouse scRNA-seq)
+          │
+          ▼
+Independent Spatial Validation
+(Human)
+          │
+          ▼
+Integrated Evidence-Based Target Ranking
+```
 
 ---
 
-## Key Results
+## Key Findings
 
-Inflammatory macrophages emerged as a prominent disease-associated population in lupus nephritis.
+The analysis identified inflammatory macrophages as a major disease-associated immune population in lupus nephritis.
 
-Cross-species and cross-platform validation identified four prioritized targets:
+Integration of independent datasets consistently prioritized four therapeutic targets:
 
-1. C5AR1
-2. LILRB2
-3. CSF1R
-4. PILRA
+| Rank | Target | Supporting Evidence |
+|------|---------|---------------------|
+| 1 | **C5AR1** | Human scRNA-seq • Mouse scRNA-seq • Spatial validation |
+| 2 | **LILRB2** | Human scRNA-seq • Spatial validation |
+| 3 | **CSF1R** | Human scRNA-seq • Mouse validation • Spatial correlation |
+| 4 | **PILRA** | Human scRNA-seq • Mouse validation • Spatial correlation |
 
-### Lead Candidate: C5AR1
+---
 
-Evidence supporting C5AR1:
+## Lead Candidate: C5AR1
 
-- Strong enrichment in human inflammatory macrophages
+Among the prioritized targets, **C5AR1** demonstrated the strongest overall evidence.
+
+Supporting observations included:
+
+- Strong enrichment within human inflammatory macrophages
 - Conserved expression in mouse lupus nephritis macrophages
-- Significant increase in independent human spatial transcriptomic data
-- Strong correlation with macrophage-rich glomerular regions
+- Increased expression in an independent human spatial transcriptomic dataset
+- Positive spatial correlation with macrophage-rich glomerular regions
+
+These findings support **C5AR1** as a high-confidence therapeutic candidate for future functional investigation.
 
 ---
 
 ## Skills Demonstrated
 
-- Single-cell RNA-seq analysis
+- Single-cell RNA sequencing analysis
 - Spatial transcriptomics integration
 - Cell type annotation
 - Differential expression analysis
 - Cross-species validation
 - Translational target discovery
-- Reproducible computational workflows
-- Data-driven target prioritization
+- Reproducible computational biology workflows
+- Evidence-based therapeutic target prioritization
+
+---
+
+## Project Impact
+
+This project demonstrates how integrating multiple independent transcriptomic datasets can improve confidence in therapeutic target discovery. Rather than relying on a single dataset, the workflow combines orthogonal biological evidence to prioritize candidates with stronger translational potential.
+
+The computational framework is readily adaptable to other autoimmune and inflammatory diseases.
 
 ---
 
 ## Future Directions
 
-- Integration of additional lupus nephritis cohorts
-- Incorporation of GWAS evidence
-- Druggability assessment
-- Machine learning-based target ranking
-- Network biology approaches
+Planned extensions include:
+
+- Validation in additional lupus nephritis cohorts
+- Integration with cell–cell communication analyses
+- Incorporation of human genetic (GWAS) evidence
+- Druggability assessment using public databases
+- AI-assisted therapeutic target prioritization
+- Multi-modal integration with complementary molecular datasets
