@@ -7,8 +7,8 @@ message: "If you use this repository, please cite it."
 type: software
 
 authors:
-  - family-names: Lancia
-    given-names: Hyshem H.
+    Last name: Lancia
+    First name: Hyshem H.
 
 repository-code: "https://github.com/hlancia/Cross-Species-Therapeutic-Target-Discovery-in-Lupus-Nephritis"
 
