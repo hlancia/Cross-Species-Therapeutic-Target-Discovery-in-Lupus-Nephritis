@@ -13,7 +13,7 @@ The objective of this project was to develop a reproducible computational workfl
 - Developed an end-to-end computational framework for therapeutic target discovery.
 - Integrated three independent transcriptomic datasets across species and technologies.
 - Identified **C5AR1** as the highest-confidence macrophage-associated therapeutic target.
-- Demonstrated a reproducible workflow applicable to other autoimmune and inflammatory diseases.
+- Established a reproducible computational workflow that can be adapted to therapeutic target discovery in other autoimmune and inflammatory diseases.
 
 ---
 
