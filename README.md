@@ -183,7 +183,7 @@ These pathways represent potential opportunities for therapeutic intervention.
 ## Cross-Species Validation
 
 <p align="center">
-<img src="figures/Figure4_Mouse_Validation.png" width="500">
+<img src="figures/Figure4_Cross_Dataset_Evidence_Matrix.png" width="500">
 </p>
 
 ---
