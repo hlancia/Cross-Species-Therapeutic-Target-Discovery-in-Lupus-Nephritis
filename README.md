@@ -191,7 +191,7 @@ These pathways represent potential opportunities for therapeutic intervention.
 ## Final Therapeutic Target Ranking
 
 <p align="center">
-<img src="figures/Figure6_Final_Target_Ranking.png" width="500">
+<img src="figures/Figure5_Consensus_Target_Ranking.png" width="500">
 </p>
 
 ---
