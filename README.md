@@ -1,53 +1,39 @@
 <p align="center">
-  <img src="figures/Project_Workflow.png" width="500">
+  <img src="figures/Figure6_Final_Target_Ranking.png" width="650">
 </p>
 
-# Cross-Species Therapeutic Target Discovery in Lupus Nephritis
+<h1 align="center">
+Cross-Species Therapeutic Target Discovery in Lupus Nephritis
+</h1>
 
-An end-to-end computational framework for therapeutic target discovery through the integration of human single-cell RNA sequencing, mouse validation, and human spatial transcriptomics.
+<p align="center">
 
----
+![R](https://img.shields.io/badge/R-4.6+-276DC3?logo=r)
+![Seurat](https://img.shields.io/badge/Seurat-v5-blue)
+![Single Cell RNA-seq](https://img.shields.io/badge/Single--Cell-RNAseq-orange)
+![Spatial Transcriptomics](https://img.shields.io/badge/Spatial-Transcriptomics-green)
+![Target Discovery](https://img.shields.io/badge/Target-Discovery-red)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-## Quick Facts
-
-| | |
-|--------------------------|--------------------------------------------|
-| **Disease** | Lupus Nephritis |
-| **Focus** | Therapeutic Target Discovery |
-| **Species** | Human + Mouse |
-| **Technologies** | Single-cell RNA-seq, Spatial Transcriptomics |
-| **Programming Language** | R |
-| **Primary Output** | Consensus Therapeutic Target Ranking |
-| **Lead Candidate** | **C5AR1** |
+</p>
 
 ---
 
-## Overview
+# Overview
 
-This repository presents a fully reproducible computational workflow for therapeutic target discovery in lupus nephritis by integrating independent human and mouse transcriptomic datasets.
+This project presents an end-to-end computational workflow for identifying macrophage-associated therapeutic targets in lupus nephritis through integration of independent human and mouse transcriptomic datasets.
 
-The workflow combines human single-cell RNA sequencing, cross-species validation, and human spatial transcriptomics to prioritize macrophage-associated therapeutic targets supported by multiple independent lines of biological evidence.
+The analysis combines human single-cell RNA sequencing, mouse single-cell RNA sequencing, and human spatial transcriptomics to prioritize conserved therapeutic targets supported by multiple orthogonal sources of biological evidence.
 
-This repository demonstrates how reproducible computational biology can accelerate therapeutic target discovery and support translational research in autoimmune disease.
-
----
-
-## Highlights
-
-- Cross-species therapeutic target discovery workflow
-- Integration of three independent transcriptomic datasets
-- Human, mouse, and spatial validation
-- Fully reproducible end-to-end computational pipeline
-- Evidence-based therapeutic target prioritization
-- Identification of **C5AR1** as the highest-confidence therapeutic target
+The overall objective is to demonstrate a reproducible computational strategy for therapeutic target discovery in autoimmune disease and translational immunology.
 
 ---
 
-## Scientific Motivation
+# Scientific Motivation
 
 Inflammatory macrophages play a central role in kidney injury during lupus nephritis.
 
-Therapeutic target discovery based on a single dataset often identifies candidates with limited reproducibility.
+However, therapeutic target discovery based on a single dataset often identifies candidates with limited reproducibility.
 
 This project addresses this challenge by integrating:
 
@@ -57,76 +43,71 @@ This project addresses this challenge by integrating:
 - Cross-species validation
 - Spatial validation
 
-to identify therapeutic targets consistently associated with inflammatory macrophages across independent datasets and technologies.
+to identify robust therapeutic targets consistently associated with inflammatory macrophages across independent datasets and technologies.
 
 ---
 
-## Workflow
-
-<p align="center">
-<img src="figures/Figure0_Project_Workflow.png" width="850">
-</p>
-
----
-
-## Repository Structure
+# Workflow
 
 ```text
-Cross-Species-Therapeutic-Target-Discovery/
-
-├── data/
-│   └── README.md
-│
-├── docs/
-│   ├── 01_Project_Summary.md
-│   ├── 02_Executive_Summary.md
-│   └── 03_Methodology.md
-│
-├── figures/
-│   └── README.md
-│
-├── results/
-│   └── README.md
-│
-├── scripts/
-│   └── README.md
-│
-├── requirements.md
-├── LICENSE
-└── README.md
+Human Single-cell RNA Sequencing
+             │
+             ▼
+Inflammatory Macrophage Identification
+             │
+             ▼
+Differential Expression Analysis
+             │
+             ▼
+Cross-Species Validation
+(Mouse scRNA-seq)
+             │
+             ▼
+Human Spatial Transcriptomic Validation
+             │
+             ▼
+Final Therapeutic Target Prioritization
 ```
 
 ---
 
-## Documentation
+# Repository Structure
 
-Additional project documentation is available in:
+```
+scripts/
+│
+├── 01_human_target_discovery.R
+├── 02_mouse_validation.R
+├── 03_spatial_validation.R
+└── 04_final_target_prioritization.R
 
-- [Project Summary](docs/01_Project_Summary.md)
-- [Executive Summary](docs/02_Executive_Summary.md)
-- [Methodology](docs/03_Methodology.md)
-- [Data Documentation](data/README.md)
-- [Scripts](scripts/README.md)
-- [Results](results/README.md)
-- [Figures](figures/README.md)
+figures/
+
+results/
+
+docs/
+
+data/
+    README.md
+```
 
 ---
 
-## Datasets
+# Datasets
 
 | Dataset | Species | Technology | Purpose |
-|----------|----------|------------|---------|
-| AMP Lupus Nephritis (SDY997) | Human | Single-cell RNA sequencing | Target discovery |
-| GSE201932 | Mouse | Single-cell RNA sequencing | Cross-species validation |
+|----------|----------|------------|----------|
+| AMP Lupus Nephritis (SDY997) | Human | Single-cell RNA-seq | Target discovery |
+| GSE201932 | Mouse | Single-cell RNA-seq | Cross-species validation |
 | GSE263909 | Human | Spatial transcriptomics | Independent validation |
 
-The processed datasets are not redistributed because of GitHub file size limitations.
+The processed datasets are not included because of GitHub file size limitations.
 
-Instructions for downloading the original public datasets are provided in the **data/** directory.
+Instructions for downloading the original public datasets are provided in the **data/** folder.
 
 ---
 
-## Computational Pipeline
+# Computational Pipeline
 
 The workflow integrates multiple layers of biological evidence:
 
@@ -136,51 +117,47 @@ The workflow integrates multiple layers of biological evidence:
 - Differential gene expression analysis
 - Cross-species validation using an independent mouse dataset
 - Independent validation using human spatial transcriptomics
-- Integrated evidence-based therapeutic target prioritization
+- Multi-evidence therapeutic target prioritization
 
-This multi-step strategy improves confidence in biologically meaningful therapeutic targets.
+This multi-step strategy increases confidence in biologically meaningful therapeutic targets.
 
 ---
 
-## Main Results
+# Main Results
 
-The computational workflow generated:
+The pipeline generated:
 
-- Human inflammatory macrophage atlas
-- Differential macrophage marker analysis
-- Candidate therapeutic target identification
+- Human inflammatory macrophage marker genes
 - Cross-species validation
 - Human spatial transcriptomic validation
 - Spatial macrophage correlation analysis
-- Consensus therapeutic target ranking
-
-Together, these analyses prioritize macrophage-associated therapeutic candidates supported by multiple independent datasets.
+- Final therapeutic target ranking
 
 ---
 
-## Key Findings
+# Key Findings
 
 The highest-confidence therapeutic targets identified were:
 
 | Rank | Target | Supporting Evidence |
 |------|---------|---------------------|
-| **1** | **C5AR1** | Human scRNA-seq • Mouse scRNA-seq • Human spatial validation |
-| **2** | **LILRB2** | Human scRNA-seq • Human spatial validation |
-| **3** | **CSF1R** | Human scRNA-seq • Mouse validation • Spatial macrophage correlation |
-| **4** | **PILRA** | Human scRNA-seq • Mouse validation • Spatial macrophage correlation |
+| 1 | C5AR1 | Human scRNA-seq • Mouse scRNA-seq • Spatial validation |
+| 2 | LILRB2 | Human scRNA-seq • Spatial validation |
+| 3 | CSF1R | Human scRNA-seq • Mouse validation • Spatial correlation |
+| 4 | PILRA | Human scRNA-seq • Mouse validation • Spatial correlation |
 
-Among these candidates, **C5AR1** demonstrated the strongest overall evidence through:
+Among these candidates, **C5AR1** demonstrated the strongest overall evidence, showing:
 
-- Strong enrichment within inflammatory macrophages
-- Conserved expression across species
-- Increased expression in independent human spatial transcriptomic data
-- Positive spatial correlation with macrophage-rich inflammatory regions
+- strong enrichment in inflammatory macrophages
+- reproducible expression across species
+- increased expression in lupus nephritis tissue
+- positive spatial correlation with macrophage-rich regions
 
-These findings support **C5AR1** as a promising therapeutic candidate for future functional investigation.
+These findings support C5AR1 as a promising therapeutic candidate for further functional investigation.
 
 ---
 
-## Biological Significance
+# Biological Significance
 
 The integrated analysis suggests that inflammatory macrophages in lupus nephritis are characterized by coordinated activation of:
 
@@ -189,133 +166,123 @@ The integrated analysis suggests that inflammatory macrophages in lupus nephriti
 - Innate immune receptors
 - Macrophage differentiation programs
 
-These pathways represent promising opportunities for therapeutic intervention.
+These pathways represent potential opportunities for therapeutic intervention.
 
 ---
 
-## Example Results
+# Example Figures
 
-### Human Single-Cell Atlas
+## Human Inflammatory Macrophage Discovery
 
 <p align="center">
-<img src="figures/Figure1_Human_AMP_LN_Atlas.png" width="800">
+<img src="figures/Figure2_Human_Target_Discovery.png" width="500">
 </p>
 
 ---
 
-### Cross-Dataset Evidence
+## Cross-Species Validation
 
 <p align="center">
-<img src="figures/Figure4_Cross_Dataset_Evidence_Matrix.png" width="700">
+<img src="figures/Figure4_Mouse_Validation.png" width="500">
 </p>
 
 ---
 
-### Final Therapeutic Target Ranking
+## Final Therapeutic Target Ranking
 
 <p align="center">
-<img src="figures/Figure5_Consensus_Target_Ranking.png" width="700">
+<img src="figures/Figure6_Final_Target_Ranking.png" width="500">
 </p>
 
 ---
 
-## Technologies
-
-### Programming
+# Technologies
 
 - R
-
-### Bioinformatics
-
 - Seurat
 - GEOquery
-- clusterProfiler
 - dplyr
 - ggplot2
-- patchwork
-
-### Analytical Methods
-
+- clusterProfiler
 - Single-cell RNA sequencing
 - Spatial transcriptomics
-- Differential gene expression analysis
-- Cross-species validation
-- Translational target discovery
+- Computational Immunology
+- Translational Target Discovery
 
 ---
 
-## Limitations
+# Limitations
 
-Several limitations should be considered.
+Several limitations should be considered:
 
-- Human and mouse immune systems are not identical.
-- Spatial transcriptomics has lower cellular resolution than single-cell RNA sequencing.
-- Computational prioritization does not establish functional causality.
+- Mouse and human immune systems are not identical, limiting complete cross-species translation.
+- Spatial transcriptomic regions contain mixed cellular populations rather than isolated macrophages.
+- Target prioritization is based on transcriptomic evidence and does not establish functional causality.
 - Independent validation in additional lupus nephritis cohorts would further strengthen confidence.
 
-Despite these limitations, convergence across multiple independent datasets substantially increases confidence in the prioritized therapeutic targets.
+Despite these limitations, convergence across independent datasets substantially increases confidence in the identified therapeutic candidates.
 
 ---
 
-## Future Directions
+# Future Directions
 
 Planned extensions include:
 
-- Validation in additional lupus nephritis cohorts
 - Cell–cell communication analysis
-- Human genetic (GWAS) integration
-- Druggability assessment
-- AI-assisted therapeutic target prioritization
-- Multi-omic data integration
+- AI-driven therapeutic target prioritization
+- Multi-omic target integration
+- GWAS integration
+- Druggability annotation
+- Functional validation using experimental models
 
 ---
 
-## Reproducibility
+# Reproducibility
 
-The complete analysis is fully reproducible.
+The analysis is fully reproducible.
 
-Execute the scripts sequentially:
+Run the scripts in order:
 
-```text
-01_human_discovery.R
-        │
-        ▼
-02_target_prioritization.R
-        │
-        ▼
-03_mouse_validation.R
-        │
-        ▼
-04_spatial_validation.R
-        │
-        ▼
-05_consensus_ranking.R
+```
+01_human_target_discovery.R
+
+↓
+
+02_mouse_validation.R
+
+↓
+
+03_spatial_validation.R
+
+↓
+
+04_final_target_prioritization.R
 ```
 
-All intermediate tables, final rankings, and publication-quality figures are generated automatically.
+All intermediate tables and publication-quality figures are generated automatically.
 
 ---
 
-## Portfolio Roadmap
+# Related Projects
 
-This repository is the first project in a broader Computational Immunology and AI portfolio focused on:
+This repository is part of the **AI Computational Immunology Portfolio**.
 
-- Cross-species therapeutic target discovery
-- Cell–cell communication analysis
-- AI-assisted therapeutic target prioritization
-- Precision medicine
-- Multi-omics integration
+- Cross-Species Therapeutic Target Discovery in Lupus Nephritis
+- Cell–Cell Communication Analysis in Lupus Nephritis
+- AI-Driven Therapeutic Target Prioritization
+- AI-Driven Patient Stratification and Precision Targeting
+
+Together, these repositories demonstrate a complete computational workflow progressing from **single-cell target discovery** to **AI-assisted precision medicine**.
 
 ---
 
-## Author
+# Author
 
 Independent computational biology and AI project focused on:
 
 - Translational Immunology
 - Autoimmune Disease
 - Single-cell Transcriptomics
-- Computational Biology
 - Therapeutic Target Discovery
 - Machine Learning
 - Precision Medicine
