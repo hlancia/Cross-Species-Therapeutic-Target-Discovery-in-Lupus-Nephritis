@@ -175,7 +175,7 @@ These pathways represent potential opportunities for therapeutic intervention.
 ## Human Inflammatory Macrophage Discovery
 
 <p align="center">
-<img src="figures/Figure2_Human_Target_Discovery.png" width="500">
+<img src="figures/Figure2_Human_Lead_Targets_DotPlot.png" width="500">
 </p>
 
 ---
