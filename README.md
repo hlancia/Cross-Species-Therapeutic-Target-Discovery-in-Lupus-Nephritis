@@ -23,7 +23,7 @@ Cross-Species Therapeutic Target Discovery in Lupus Nephritis
 
 This repository presents an end-to-end computational framework for therapeutic target discovery in lupus nephritis through the integration of independent human and mouse transcriptomic datasets.
 
-By combining human single-cell RNA sequencing, cross-species validation, and human spatial transcriptomics, the workflow prioritizes macrophage-associated therapeutic targets supported by multiple orthogonal lines of biological evidence.
+By combining **human single-cell RNA sequencing, cross-species validation,** and **human spatial transcriptomics**, the workflow prioritizes macrophage-associated therapeutic targets supported by multiple orthogonal lines of biological evidence.
 
 The project illustrates how reproducible computational biology can accelerate target discovery and support translational research in autoimmune disease.
 
